@@ -1,0 +1,90 @@
+#profileContainer{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 300px;
+}
+
+.profileLogo,#profilePic{
+    height: 180px;
+    width: 180px;
+    display: flex;
+    background-image: linear-gradient(to right, #8a2be2b8, #ed143dcc);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 80px;
+}
+
+.profileLogo{
+    display: inline-flex;
+    height:25px;
+    width: 25px;
+    margin-right: 5px;
+    transform: translateY(-2px);
+}
+
+#profileEdit{
+    background-image: linear-gradient(to right, #8a2be2b8, #ed143dcc);
+}
+
+#profileUpdate{
+    display:none;
+}
+
+#updateForm{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#userPost .w3-round{
+    min-height:500px;
+    margin-top: 16px;
+    position: relative;
+    border: .5px solid #9c27b0;
+    font-weight: bold;
+    color: crimson;
+    background-color: white;
+    font-size: 1.5em;
+}
+#userPost p{
+    font-size: 1.1em;
+    color: black;
+    width: 60%;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    text-align: center;
+    font-family: "Monotype corsiva", myFirstFont;
+    margin-bottom: 70px;
+}
+#userPost h3{
+    margin-bottom: 50px;
+    font-weight: bold;
+    font-family: myFirstFont,;
+    font-size: 1.4em;
+}
+#userPost .w3-bar{
+    height:50px;
+    border-top: .5px solid #9c27b0;
+    position: absolute;
+    bottom: 0;
+    color: crimson;
+}
+
+@media only screen and (max-width:600px){
+    #profileContainer{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+        margin-top: 16px;
+    }
+    #profilePic{
+        position: relative;
+        left: 43%;
+        transform: translateX(-47%);
+    }
+}
